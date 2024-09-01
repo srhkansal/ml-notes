@@ -65,23 +65,24 @@ Step 1.1 | Exploratory analysis
     Data types: Numerical or categorical
 
 
-##############################################################
-## Feature Engineering
-    ## Feature Transformation
-        Missing Value Imputation
-            Eliminate, Mean/Median, Most Frequent
-        Handling Categorical Features
-            Categorical to Numerical conversion | One Hot Encoding
-            Numerical TO Categorical - Age 0-15 goes in a group
-        Outlier Detection
-        Feature Scaling
-            Eucledian distance |  If Scale is different, algorithm will be a problem. 
+#################  Feature Engineering #####################
+Feature Transformation >> Feature Connstruction >> Feature Selection >> Feature Extraction
 
-    ## Feature Connstruction
-        In titanic dataset --> SibSp, Parch (parent child) can be converted to family column
-    ## Feature Selection
+## Feature Transformation
+    Missing Value Imputation
+        Eliminate, Mean/Median, Most Frequent
+    Handling Categorical Features
+        Categorical to Numerical conversion | One Hot Encoding
+        Numerical TO Categorical - Age 0-15 goes in a group
+    Outlier Detection
+    Feature Scaling
+        Eucledian distance |  If Scale is different, algorithm will be a problem. 
 
-    ## Feature Extraction
+## Feature Connstruction
+    In titanic dataset --> SibSp, Parch (parent child) can be converted to family column
+## Feature Selection
+
+## Feature Extraction
 ##############################################################
 
 Feature Scaling --> Standardization (Z-score normalization) [Most problems will use Standardization]
@@ -198,13 +199,13 @@ Date and Time Handling
     Convert this into datetime
 
 ##############################################################
-Missing Values Handling  [CCA - Complete case analysis]
-    ---> Remove a rows [Not preffered] [remove rows where any column is missing]
+Missing Values Handling  
+    ---> Remove a rows [CCA - Complete case analysis][Not preffered] [remove rows where any column is missing]
             Only when Missing Completely at random [MCAR]
             if missing more than 5% - don't use this approach
             Think about removing the column of too many column values are missing
     ---> Impute them
-            Univariate
+            Univariate ######
                 Numerical 
                     Mean [if distribution is normal] Or Median [if distribution is skewed][if missing value less than 5%]
                         May change distribute
@@ -233,14 +234,84 @@ Missing Values Handling  [CCA - Complete case analysis]
 
 
                 Categorical
-                    Mod
+                    Mod 
+                        [Most Frequent][Missing Completely at random][Missing less than 5%]
+                        May change data distribution
                     Missing
-            MultiVariate
+                        if more than 5% missing, create a new value for missing column values to "Missing"
+
+                    Random Imputation
+                        Random is picked from other column values randomly
+                        Can be applied to any numerical and categorical columns
+                        Not available in SKLearan
+                        distribution is not affected, it largely remains same.
+                        Does not work well for Decision tree based algorithm but good for Linear Regression
+                        Memory heavy bacause you need data to pick random from on server
+                        Variance also remains largely same
+                        co-variance change is an issue
+                        Extra handling: returned random val should be same for a given input variable
+                    
+                    Missing Indicator
+                        Create a new column with value true and False
+                        Age column has a new column Age_NA (if column has missing, Age_NA will have true)
+                    
+                    Automatically select value for Imputation
+                        GridSearchCV (sklearn Automatically selects the right approach) [D37]
+
+            MultiVariate ######
                     KNN imputer
-                    Iterative imputer
+                        Idea - you are like your neigbor
+                        Replace with value which is closest to you
+                        If K is 1 - ask one neigbor
+                        If k is let say 3 - find 3 nearest neigbor, take average and replace missing values
+                        Might need NAN Eucledian distance if neigbors have other missing values
+                        More accuracy but time taking
+                        Need training set on server bacause you would need all training data on server 
+                        May need be good for large dataset due to above reason
 
+                    Iterative imputer [also known as MICE - MultiVariate Imputation by Chained Equations]
+                        Assumptions:
+                            MCAR - you could not collect data for some rows
+                            MAR - Few people did not fill the values ###### Use MICE  only here
+                            Missing not at random - Data Eliminated intentionally 
+                        
+                        More accurate
 
+                        Disadvantages:
+                            Speed, Memory is an issue
+                            
+##############################################################
+Outliner Detection and Removal
+    Important to think if you need to remove them or handle them
+    Logistic, Linear, Deep Learning are badly impacted due to outliers [if weights is a factor, outliers are mostly an issues]
 
+    What to do with outliers:
+    Trmmming - 
+    Capping - 
+        Put a limit on outliers
+        anything beyound 100 Million in salary will be traeted as 100 Million
+    
+    Tecnhniques 
+        Z-score [Only works for normal or near normal distribution]
+        [mean + 3 sigma] or mean - [3 sigma is outliers]    
+            if beyond this, consider them as outlier - do Trmmming or Capping
+
+        IQR [Skewed data]
+            Know box plot and IQR
+            Q3 + 1.5 * IQR - Beyond this outliers
+            Q1 - 1.5 * IQR - Beyond this outliers
+
+        Percentile:
+            Percentile capping is called winsorization
+
+##################### Feature Extraction #####################
+Principal Component Analysis (PCA)  [Supervised Machine Learning]
+    Benefits:
+        Higher to lower dimensions while still keeping the essence of data
+        Faster algorithm
+        Visualization as it reduces the dimensions
+    
+ 
 
 
 
