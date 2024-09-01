@@ -1,0 +1,258 @@
+Datasets: titanic_dataset.csv
+https://www.kaggle.com/datasets/heptapod/titanic?resource=download
+
+Dataset: Restaurant Tips Dataset
+https://www.kaggle.com/datasets/saurabhbadole/restaurant-tips-dataset
+
+## Types of Machine Learning
+Supervised Learning
+    Classification Problem
+        How many customer will leave platform
+    Regression Problem
+        How many customer will leave platform, so that we can give discount and
+        Find chances for each customer so that we can plan appeasement discount
+Un-supervised Learning
+
+All Steps
+0. Preprocess + EDA (Exploratory analysis) + Feature Selection
+1. Extract Input and output columns
+2. Scale the values
+3. Train test split
+4. Train the model
+5. Evaluate the model | model selection
+6. Deploy the model
+
+Exploratory analysis
+    Univariate analysis [single coulmn analysis] 
+    Bivariate analysis [2 coulmns analysis]
+    Multi-varaite analysis [Multi coulmns analysis]
+
+Data types:
+    Numerical data
+    Categorical data
+
+
+Step 1:
+Know your data
+Questions:
+1. How big is data?
+    df.shape()
+
+2. How does the data look like?
+    df.head() -- gives top 5 rows
+    df.sample() -- random 5 rows
+
+3. What is the data type of columns?
+    df.info() 
+        not-null count, data-type, memory space, numeric, vs categorical data
+
+4. Missing values
+    df.isnull.sum()
+        displays missing values for each columns
+    
+5. df.describe()
+    count, mean, std, min 25%, 50%, 75%, max
+
+6. Are there duplicate values?
+    df.duplicated().sum()
+
+7. How is coorelation between columns  
+    df.corr()['column-name']
+        gives correlation between all columns. Answers between -1 to 1
+
+
+Step 1.1 | Exploratory analysis 
+    Data types: Numerical or categorical
+
+
+##############################################################
+## Feature Engineering
+    ## Feature Transformation
+        Missing Value Imputation
+            Eliminate, Mean/Median, Most Frequent
+        Handling Categorical Features
+            Categorical to Numerical conversion | One Hot Encoding
+            Numerical TO Categorical - Age 0-15 goes in a group
+        Outlier Detection
+        Feature Scaling
+            Eucledian distance |  If Scale is different, algorithm will be a problem. 
+
+    ## Feature Connstruction
+        In titanic dataset --> SibSp, Parch (parent child) can be converted to family column
+    ## Feature Selection
+
+    ## Feature Extraction
+##############################################################
+
+Feature Scaling --> Standardization (Z-score normalization) [Most problems will use Standardization]
+                    (actual value - mean)/ standard deviation
+                    Mean becomes zero and standard deviation becomes one 
+
+                    When to use Standardization
+                        K-means, KNN, PCA, ANN, Gradient Descent
+
+                ---> Normalization  - Bring data to a column scale - Eliminate the units is an example
+                    --->MinMaxScaling output in the range of [0 to 1] [When you know min and max]
+                             = (x - x_min)/ (x_max - x_min)
+                    --->Mean Normalization rarely used [-1 to 1]
+                            = (x - x_mean) / (x_max - x_min)
+                    --->Max absolute Scaling [rare, used for sparse data] 
+                            = x/ absilute value of x_max
+                    --->Robust Scaling [Used if data has many outliers]
+                            = x - x_meadian/ IQR (x_75_percentile - x_25_percentile)
+
+
+##############################################################
+Encode categorical data 
+                Nominal - When there is no ordering in values. Example - Male and Female
+                            Use one hot encoder
+                Ordinal - First Garde and Second Grade 
+
+                ---> Ordinal Encoding [Ordinal categorical data]
+
+                ---> Label Encoding [Nominal Categorical data] [Use Label Encoder]
+
+
+    One hot encoder (Nominal categorical data)
+                No of distinct values become column and you assign 1 or zeo to those column
+                N categoris will become N column (reduce them to N-1 column by dropping 1st column)
+                Multi coliniarity 
+                May result in increased dimensionality 
+
+##############################################################
+Handle all columns in 1 go. SOme need scaling, some other need soemthing else lie imputers only
+    Column Transfer:
+                from sklearn.compose import ColumnTRansformer(transformer=[
+                    ('tnsformerno1', SimpleImputer(),['fever']),
+                    ('tnsformerno2', OrdinalEncoder(categoris=[['MIld','Strong']]),['cough']),
+                    ('tnsformerno3', OneHOtEncoder(sparse=False, frop='first),['gender', 'city'])
+                ], remainder = 'passthrough')
+                transformer.transform(___)
+
+##############################################################
+Pipelines: Chains together multiple steps so that output of each step input to next | Day 29
+
+##############################################################
+    sns.displot tells you if data is normalization
+    pd.skew is zero
+    QQ plot tells you if data is normal 
+    MathMatical Transformation (End goal to normally distribute the data)
+
+    Function transformer #####
+            Linear Regression, Logistic Regression need data to be normally distriburted
+            Function transformer
+            ---> Log Transoform 
+                [Take log of value, right skewed data, not on negative values]
+            ---> Reciprocal Transoform
+                Small becomes big, big becomes small
+            ---> Sq transform
+                [left skewed data]
+            ---> Square root transform
+                Not much used
+            ---> Custom transform
+
+    Power transformer ##### [Used more than Functional transformer | any one can be used]
+            Power Transoform
+            ---> Box-Cox Transoform [Only Transoform is number for positive]
+            ---> yeo - jhonson [Also applies to negative of zero] [default and used more]
+
+
+##############################################################
+Encode numerical data (convert to categorical data) []convert to contiguos intervals 
+    Discritization or Binning
+        Why?
+            To better handle outliers
+            Improve value spread
+
+        Types
+            Unsupervised Binning
+                Equal width or uniform Binning
+                Equal frequency or Quantile binning
+                K means binning (intervals are called centroid)
+            supervised Binning 
+                Decision Tree Binning
+            Custom Binning
+
+    Binarization
+        Convert contiguos values to binary
+
+##############################################################
+Handling mixed variables (Column has both Numerical and Categorical)
+    Example: 
+        Railway coach in Invaid- B5, C23, A12
+        Split in 2 columns
+            Cat  - Numerical
+            B       5
+            C       23
+            A       12
+
+        Column has data like - A, V, 1, 4, Z, 8
+    
+Date and Time Handling
+    Example: 23 August 2024
+    Has a lot of hidden information
+        Day, Month, Yead, Day of week, weekend or not, quaerter?
+    
+
+    info() method gives date/time as object
+    Convert this into datetime
+
+##############################################################
+Missing Values Handling  [CCA - Complete case analysis]
+    ---> Remove a rows [Not preffered] [remove rows where any column is missing]
+            Only when Missing Completely at random [MCAR]
+            if missing more than 5% - don't use this approach
+            Think about removing the column of too many column values are missing
+    ---> Impute them
+            Univariate
+                Numerical 
+                    Mean [if distribution is normal] Or Median [if distribution is skewed][if missing value less than 5%]
+                        May change distribute
+                        Introduces outliers
+                        Co-variance may change with other columns
+                    Arbitrary [Mostly used with Categorical but can be done with numerical][Not used much]
+                        Fill it with any arbitrary value [prefrred something which is not in your data]
+                        variance
+                        co-relation changes
+                        When?
+                            Data is not missing at random
+                    End of distribution
+                        Difficult to find arbitrary value.
+                        Pick end of distribution value
+                        if Normal distriburted
+                            replace with Mean + 3 sigma
+                            replace with  Mean - 3 Sigma
+                        If Skewed distribution
+                            Q3 - Q1
+
+                        Variance
+                            co-relation changes
+                            When?
+                                Data is not missing at random
+                    Random [Both categorical and numerical]
+
+
+                Categorical
+                    Mod
+                    Missing
+            MultiVariate
+                    KNN imputer
+                    Iterative imputer
+
+
+Finished 36 days 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
