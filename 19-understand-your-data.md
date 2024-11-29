@@ -25,3 +25,7 @@
 8. **Check coorelation between columns**  
     df.corr()['column-name']  
     gives correlation between all columns. Answers between -1 to 1
+9. df.['column'].min()
+   df.['column'].max()
+   df.['column'].mean()
+   df.['column'].skew()
