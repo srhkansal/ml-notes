@@ -33,10 +33,7 @@ Data types:
 
 
 Step 1:
-Know your data - https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data.md 
-[Setup Guide](19-understand-your-data.md)
-./19-understand-your-data.md
-
+Frequently used dataframe functions to understand the dataset [https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data.md](19-understand-your-data.md)
 
 Step 1.1 | Exploratory analysis 
     Data types: Numerical or categorical
