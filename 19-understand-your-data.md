@@ -1,6 +1,7 @@
 
-1. **How big is data?**
-    df.shape()  |  returns a tuple (number_of_rows, number_of_columns) | Example - (2223, 13)
+1. **How big is data?**  
+    df.shape()
+    returns a tuple (number_of_rows, number_of_columns) | Example - (2223, 13)
 
 3. **How does the data look like?**  
     df.head() -- gives top 5 rows  
