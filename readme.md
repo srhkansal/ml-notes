@@ -35,8 +35,9 @@ Data types:
 Step 1:
 [Frequently used dataframe functions to understand the dataset](https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data.md)
 
-Step 1.1 | Exploratory analysis 
-    Data types: Numerical or categorical
+Step 1.1 | Exploratory analysis  
+[Univariate data analysis](https://github.com/srhkansal/ml-notes/blob/main/20-eda-data-visualization.md)  
+Data types: Numerical or categorical
 
 
 #################  Feature Engineering #####################
