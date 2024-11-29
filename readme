@@ -33,32 +33,7 @@ Data types:
 
 
 Step 1:
-Know your data
-Questions:
-1. How big is data?
-    df.shape()
-
-2. How does the data look like?
-    df.head() -- gives top 5 rows
-    df.sample() -- random 5 rows
-
-3. What is the data type of columns?
-    df.info() 
-        not-null count, data-type, memory space, numeric, vs categorical data
-
-4. Missing values
-    df.isnull.sum()
-        displays missing values for each columns
-    
-5. df.describe()
-    count, mean, std, min 25%, 50%, 75%, max
-
-6. Are there duplicate values?
-    df.duplicated().sum()
-
-7. How is coorelation between columns  
-    df.corr()['column-name']
-        gives correlation between all columns. Answers between -1 to 1
+Know your data - https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data 
 
 
 Step 1.1 | Exploratory analysis 
