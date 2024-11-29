@@ -19,5 +19,7 @@ Integration with Other Libraries: Matplotlib integrates seamlessly with other Py
  plt.hist(df['some column'], bins=50)  
  plt.dist(df['some column]) - Estimates the probability density function (PDF) of the data, smoothing the histogram.  
  plt.boxplot(df['some column])  
+ ![image](https://github.com/user-attachments/assets/96c10f54-6f41-430a-a858-8387c69a2ec8)
+
 
  
