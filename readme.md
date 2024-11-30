@@ -37,7 +37,11 @@ Step 1:
 
 Step 1.1 | Exploratory analysis  
 [Univariate data analysis](https://github.com/srhkansal/ml-notes/blob/main/20-eda-data-visualization.md)  
-Data types: Numerical or categorical
+Data types: Numerical or categorical  
+
+Step 1.2 | Exploratory analysis 
+[Multivariate data analysis]([https://github.com/srhkansal/ml-notes/blob/main/20-eda-data-visualization.md](https://github.com/srhkansal/ml-notes/blob/main/21-multivariate-analysis.md))  
+
 
 
 #################  Feature Engineering #####################
