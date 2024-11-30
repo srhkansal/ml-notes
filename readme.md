@@ -39,10 +39,11 @@ Step 1.1 | [Univariate data analysis](https://github.com/srhkansal/ml-notes/blob
 Step 1.2 | [Multivariate data analysis](https://github.com/srhkansal/ml-notes/blob/main/21-multivariate-analysis.md)   
 Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22-pandas-profiling.md)  
 
-
-
-#################  Feature Engineering #####################
-Feature Transformation >> Feature Connstruction >> Feature Selection >> Feature Extraction
+**Feature Engineering**
+1. Feature Transformation  
+2. Feature Connstruction  
+3. Feature Selection  
+4. Feature Extraction
 
 ## Feature Transformation
     Missing Value Imputation
