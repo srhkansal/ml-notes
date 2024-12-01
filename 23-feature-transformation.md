@@ -1,4 +1,7 @@
 **Feature Transformation**  
+Modifying or changing the original features (variables) of a dataset to improve the performance of machine learning algorithms or to make the data more suitable for analysis.   
+
+
 - Missing Value Imputation
   1. Eliminate, Mean/Median, Most Frequent
 - Handling Categorical Features
