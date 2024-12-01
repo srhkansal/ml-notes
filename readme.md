@@ -46,14 +46,15 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
 4. Feature Extraction
         
 **Feature Transformation**  
-- Main point 1
-  - Subpoint 1a
-  - Subpoint 1b
-    - Sub-subpoint 1b.1
-    - Sub-subpoint 1b.2
-- Main point 2
-  - Subpoint 2a
-  - Subpoint 2b
+- Missing Value Imputation
+  - Eliminate, Mean/Median, Most Frequent
+- Handling Categorical Features
+  - Categorical to Numerical conversion | One Hot Encoding
+  - Numerical TO Categorical - Age 0-15 goes in a group
+- Outlier Detection
+-  Scaling - Scaling adjusts the range of numeric features so they fit within a specific scale
+  - [Standardization](https://github.com/srhkansal/ml-notes/blob/main/24-feature-scaling-standardization.md) 
+
 
     1. Missing Value Imputation  
         Eliminate, Mean/Median, Most Frequent  
