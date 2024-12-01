@@ -19,4 +19,5 @@ Modifying or changing the original features (variables) of a dataset to improve 
    - Label Encoding - Applied on output labels    
    - One hot endocing -  
      - Dummy variable trap - drop first variable(column) from newly generated columns  
-     - OHE using most frequent variable - Replace less freuent values with others   
+     - OHE using most frequent variable - Replace less freuent values with others
+     - [Use columntransformer to avoid hassle](https://github.com/srhkansal/ml-notes/blob/main/28-columnTransformer.md)
