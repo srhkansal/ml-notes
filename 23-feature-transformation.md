@@ -14,4 +14,9 @@ Modifying or changing the original features (variables) of a dataset to improve 
    - Types
      - [Standardization](https://github.com/srhkansal/ml-notes/blob/main/24-feature-scaling-standardization.md)
      - [Normalization](https://github.com/srhkansal/ml-notes/blob/main/25-feature-scaling-normalization.md)
-
+-  Encoding - Handling Categorical Features   
+   - Ordinal Encoding - Applied on ordinal category data   
+   - Label Encoding - Applied on output labels    
+   - One hot endocing -  
+     - Dummy variable trap - drop first variable(column) from newly generated columns  
+     - OHE using most frequent variable - Replace less freuent values with others   
