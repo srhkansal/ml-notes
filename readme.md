@@ -6,11 +6,11 @@ https://www.kaggle.com/datasets/saurabhbadole/restaurant-tips-dataset
 
 **Types of Machine Learning**  
 - Supervised Learning  
-  1. Classification Problem  
-     1.1 How many customer will leave platform  
-  2. Regression Problem  
-     2.1 How many customer will leave platform, so that we can give discount and  
-     2.2 Find chances for each customer so that we can plan appeasement discount
+  - Classification Problem  
+    - How many customer will leave platform  
+  - Regression Problem  
+    - How many customer will leave platform, so that we can give discount and  
+    - Find chances for each customer so that we can plan appeasement discount
 - Un-supervised Learning  
 
 All Steps
