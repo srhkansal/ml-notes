@@ -54,6 +54,7 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
     Outlier Detection
     Feature Scaling
         Eucledian distance |  If Scale is different, algorithm will be a problem. 
+        [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22-pandas-profiling.md) 
         [Standardization](https://github.com/srhkansal/ml-notes/blob/main/24-feature-scaling-standardization.md)
 
 ## Feature Connstruction
