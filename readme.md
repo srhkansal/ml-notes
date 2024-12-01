@@ -46,6 +46,15 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
 4. Feature Extraction
         
 **Feature Transformation**  
+- Main point 1
+  - Subpoint 1a
+  - Subpoint 1b
+    - Sub-subpoint 1b.1
+    - Sub-subpoint 1b.2
+- Main point 2
+  - Subpoint 2a
+  - Subpoint 2b
+
     1. Missing Value Imputation  
         Eliminate, Mean/Median, Most Frequent  
     2. Handling Categorical Features  
