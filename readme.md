@@ -44,8 +44,8 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
 2. Feature Connstruction  
 3. Feature Selection  
 4. Feature Extraction
-
-## Feature Transformation
+        
+**Feature Transformation**
     Missing Value Imputation
         Eliminate, Mean/Median, Most Frequent
     Handling Categorical Features
@@ -53,8 +53,6 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
         Numerical TO Categorical - Age 0-15 goes in a group
     Outlier Detection
     Feature Scaling
-        Eucledian distance |  If Scale is different, algorithm will be a problem. 
-        [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22-pandas-profiling.md) 
         [Standardization](https://github.com/srhkansal/ml-notes/blob/main/24-feature-scaling-standardization.md)
 
 ## Feature Connstruction
