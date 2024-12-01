@@ -25,9 +25,9 @@ All Steps
 
 **Data types:**  
   - Numerical data  
-  - Categorical data
-    - Nominal: No ordering in data. Example - Gender, Color
-    - Ordinal: Ordering in data. Example - Good, Better, Best
+  - Categorical data  
+    - Nominal: No ordering in data. Example - Gender, Color  
+    - Ordinal: Ordering in data. Example - Good, Better, Best  
 
 
 Step 1: [Frequently used dataframe functions to understand the dataset](https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data.md)  
