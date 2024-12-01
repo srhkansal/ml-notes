@@ -54,8 +54,6 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
 - Outlier Detection
 -  Scaling - Scaling adjusts the range of numeric features so they fit within a specific scale
   - [Standardization](https://github.com/srhkansal/ml-notes/blob/main/24-feature-scaling-standardization.md) 
-
-
     1. Missing Value Imputation  
         Eliminate, Mean/Median, Most Frequent  
     2. Handling Categorical Features  
