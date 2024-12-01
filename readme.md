@@ -47,10 +47,10 @@ Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22
         
 **Feature Transformation**  
     1. Missing Value Imputation  
-      Eliminate, Mean/Median, Most Frequent  
+        Eliminate, Mean/Median, Most Frequent  
     2. Handling Categorical Features  
-      Categorical to Numerical conversion | One Hot Encoding  
-      Numerical TO Categorical - Age 0-15 goes in a group  
+        Categorical to Numerical conversion | One Hot Encoding  
+        Numerical TO Categorical - Age 0-15 goes in a group  
     3. Outlier Detection  
     4. Feature Scaling - Scaling adjusts the range of numeric features so they fit within a specific scale.  
         a. [Standardization](https://github.com/srhkansal/ml-notes/blob/main/24-feature-scaling-standardization.md)  
