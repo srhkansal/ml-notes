@@ -22,14 +22,10 @@ All Steps
 5. Evaluate the model | model selection
 6. Deploy the model
 
-Exploratory analysis
-    Univariate analysis [single coulmn analysis] 
-    Bivariate analysis [2 coulmns analysis]
-    Multi-varaite analysis [Multi coulmns analysis]
 
-Data types:  
-    Numerical data  
-    Categorical data  
+- Data types:  
+  - Numerical data  
+  - Categorical data  
 
 
 Step 1: [Frequently used dataframe functions to understand the dataset](https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data.md)  
