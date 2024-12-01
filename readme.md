@@ -27,14 +27,14 @@ Exploratory analysis
     Bivariate analysis [2 coulmns analysis]
     Multi-varaite analysis [Multi coulmns analysis]
 
-Data types:
-    Numerical data
-    Categorical data
+Data types:  
+    Numerical data  
+    Categorical data  
 
 
 Step 1: [Frequently used dataframe functions to understand the dataset](https://github.com/srhkansal/ml-notes/blob/main/19-understand-your-data.md)  
 
-Exploratory data analysis  
+**Exploratory data analysis**  
 Step 1.1 | [Univariate data analysis](https://github.com/srhkansal/ml-notes/blob/main/20-eda-data-visualization.md)    
 Step 1.2 | [Multivariate data analysis](https://github.com/srhkansal/ml-notes/blob/main/21-multivariate-analysis.md)   
 Step 1.3 | [Pandas Profiling](https://github.com/srhkansal/ml-notes/blob/main/22-pandas-profiling.md)  
