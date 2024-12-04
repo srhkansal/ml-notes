@@ -1,4 +1,5 @@
-'''
+**ColumnTransformer example**
+```
 import seaborn as sns
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -53,4 +54,4 @@ y_pred = pipeline.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Model Accuracy: {accuracy:.2f}')
 
-'''
+```
