@@ -1,6 +1,6 @@
 **Handle missing data**
 
-- remove
+- remove (Complete case analysis) - remove data if data is missing in any coulmn
 - Impute
   - Univariate
     - Numeric | Mean, Median, Random, End of distribution
