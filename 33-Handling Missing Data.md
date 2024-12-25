@@ -9,8 +9,9 @@
   - Multi-variate
     - KNN Imputer
     - Iterative Imputer (MICE) | Used only for Missing at random values
-   
-**Missing completely at random (MCAR)**
-**Missing at random (MAR)**
-**Missing not at random (MNAR)**
+
+**missing values types**       
+- Missing completely at random (MCAR)   
+- Missing at random (MAR)  
+- Missing not at random (MNAR)  
   
