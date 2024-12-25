@@ -8,5 +8,5 @@
     - Categorical | Mode, Missing
   - Multi-variate
     - KNN Imputer
-    - Iterative Imputer
+    - Iterative Imputer (MICE)
   
