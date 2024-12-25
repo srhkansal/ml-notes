@@ -8,5 +8,9 @@
     - Categorical | Mode, Missing
   - Multi-variate
     - KNN Imputer
-    - Iterative Imputer (MICE)
+    - Iterative Imputer (MICE) | Used only for Missing at random values
+   
+**Missing completely at random (MCAR)**
+**Missing at random (MAR)**
+**Missing not at random (MNAR)**
   
