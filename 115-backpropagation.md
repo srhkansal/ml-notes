@@ -1,2 +1,2 @@
 **Backpropagation:**  
-Algorithm to train nureal network
+Algorithm to train nureal network by finding the best values for weights and biases
