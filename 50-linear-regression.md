@@ -6,4 +6,5 @@
 
 **To find (m, b) or (weightage and bias) there are 2 ways**
 - closed form solution: Use a mathematical formula to find m and b
-- Open form solution: Use approximation techniques like gradient descent
+- Open form solution:
+  - Use approximation techniques like gradient descent, SGD | For high dimesnion this is the solution
