@@ -1,0 +1,7 @@
+- Vanishing Gradient
+- Overfitting
+  - Early stopping
+- Normalization
+- Gradient checking and clipping
+- Optimizers
+- 
