@@ -4,4 +4,5 @@
 - Normalization
 - Gradient checking and clipping
 - Optimizers
-- 
+- Learning rate and scheduling
+- Hyperparameters tuning
