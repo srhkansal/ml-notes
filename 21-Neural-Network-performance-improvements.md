@@ -2,6 +2,7 @@
 - Overfitting
   - Early stopping
 - Normalization
+  - Noramalizing inputs
 - Gradient checking and clipping
 - Optimizers
 - Learning rate and scheduling
