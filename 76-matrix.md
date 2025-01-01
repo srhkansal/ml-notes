@@ -1,0 +1,7 @@
+**Accuracy score** in machine learning, specifically in classification problems, measures the proportion of correct predictions made by the model out of all predictions.  
+**Precision** Precision = True Positives / (True Positives + False Positives)  
+- Minimizing false positives is crucial   
+**Recall** Recall= True Positives / (True Positives + False Negatives)
+- Minimizing false negatives is crucial  
+**F1 score** F1-score = 2 * (Precision * Recall) / (Precision + Recall)
+- A balance between precision and recall is needed
