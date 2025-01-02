@@ -1,6 +1,6 @@
 - Vanishing Gradient
 - Overfitting
-  - Dropouts 
+  - Dropouts - dropout only on training time, not on testing time
   - Early stopping
 - Normalization
   - Noramalizing inputs
