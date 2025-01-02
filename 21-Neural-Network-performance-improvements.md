@@ -1,5 +1,6 @@
 - Vanishing Gradient
 - Overfitting
+  - Dropouts 
   - Early stopping
 - Normalization
   - Noramalizing inputs
